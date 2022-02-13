@@ -7,7 +7,7 @@ Simple design of a backend RESTful Web Service with CRUD functionality that send
 ## The Frontend part of this project
 Link
 ```
-https://github.com/RedaMeziouni/todo-golang
+https://github.com/RedaMeziouni/Todo-Vue
 ```
 
 ### Project Tools
