@@ -7,6 +7,7 @@ import (
 	"devred.io/todolist/database"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
+	"github.com/gofiber/fiber/v2/middleware/cors"
 )
 
 func initDatabase() {
@@ -31,6 +32,7 @@ func setupRoutes(app *fiber.App){
 
 func main() {
   app := fiber.New()
+  app.Use(cors.New())
   initDatabase()
 
   app.Get("/", func(c *fiber.Ctx) error {
